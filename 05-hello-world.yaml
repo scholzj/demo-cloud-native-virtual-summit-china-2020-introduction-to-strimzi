@@ -38,7 +38,7 @@ spec:
           - name: TOPIC
             value: my-topic
           - name: DELAY_MS
-            value: "50"
+            value: "1000"
           - name: LOG_LEVEL
             value: "INFO"
           - name: MESSAGE_COUNT
