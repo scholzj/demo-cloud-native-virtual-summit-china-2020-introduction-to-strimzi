@@ -1,10 +1,10 @@
 # KubeCon EU & China: Introduction to Strimzi
 
 * Create namespace Kafka
-  * `kubectl create namespace kafka`
-  * `kubectl config set-context --current --namespace=kafka`
+  * `kubectl create namespace myproject`
+  * `kubectl config set-context --current --namespace=myproject`
 * Install the Strimzi operator
-  * `kubectl apply -f 'https://strimzi.io/install/latest?namespace=kafka'`
+  * `kubectl apply -f 'https://strimzi.io/install/latest?namespace=myproject'`
   * Explain what it installs
   * Mention other installation methods: Helm Charts, Operator Hub
 * Show the simple Kafka CR
