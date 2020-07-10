@@ -17,6 +17,7 @@ spec:
       containers:
       - name: hello-world-producer
         image: strimzi/hello-world-producer:latest
+        imagePullPolicy: IfNotPresent
         env:
           - name: CA_CRT
             valueFrom:
@@ -63,6 +64,7 @@ spec:
       containers:
       - name: hello-world-consumer
         image: strimzi/hello-world-consumer:latest
+        imagePullPolicy: IfNotPresent
         env:
           - name: CA_CRT
             valueFrom:

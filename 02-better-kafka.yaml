@@ -152,7 +152,6 @@ spec:
     storage:
       type: persistent-claim
       size: 100Gi
-      #class: ssd
       deleteClaim: true
     metrics:
       # Inspired by Zookeeper rules
