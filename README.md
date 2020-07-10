@@ -1,10 +1,10 @@
-# KubeCon EU & China: Introduction to Strimzi
+# Cloud Native + Open Source Virtual Summit China 2020: Introduction to Strimzi
 
 * Create namespace Kafka
-  * `kubectl create namespace myproject`
-  * `kubectl config set-context --current --namespace=myproject`
+  * `kubectl create namespace kafka`
+  * `kubectl config set-context --current --namespace=kafka`
 * Install the Strimzi operator
-  * `kubectl apply -f 'https://strimzi.io/install/latest?namespace=myproject'`
+  * `kubectl apply -f 'https://strimzi.io/install/latest?namespace=kafka'`
   * Explain what it installs
   * Mention other installation methods: Helm Charts, Operator Hub
 * Show the simple Kafka CR
@@ -27,4 +27,3 @@
   * `bat 05-hello-world.yaml`
   * Deploy it: `kubectl apply -f 05-hello-world.yaml`
   * Show how it consumes the messages
-* Show the Grafana dashabord
